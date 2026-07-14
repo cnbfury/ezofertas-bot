@@ -1,0 +1,37 @@
+name: Postar ofertas
+
+on:
+  push:
+    paths:
+      - "ofertas.json"
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12,15,18,21 * * *"  # 9h, 12h, 15h, 18h (horário de Brasília)
+
+permissions:
+  contents: write
+
+jobs:
+  postar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Publicar ofertas pendentes
+        run: python postar.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+
+      - name: Salvar estado
+        run: |
+          git config user.name "ezofertas-bot"
+          git config user.email "bot@ezhub.local"
+          git add -A
+          git diff --cached --quiet || git commit -m "ofertas publicadas [skip ci]"
+          git push
