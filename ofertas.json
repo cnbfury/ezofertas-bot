@@ -1,0 +1,12 @@
+[
+  {
+    "titulo": "EXEMPLO — Memória Kingston Fury Beast 16GB DDR4 3200MHz",
+    "destaque": "Ideal para upgrade de PC Gamer; Dissipador de baixo perfil",
+    "preco": "R$ 249,90 à vista",
+    "preco_antigo": "R$ 319,90",
+    "url": "https://www.amazon.com.br/dp/B097K2NYCB",
+    "loja": "amazon",
+    "postada": true,
+    "obs": "Este é só um modelo. Copie este bloco, cole abaixo, edite os dados e deixe SEM a linha 'postada' para o robô publicar."
+  }
+]
