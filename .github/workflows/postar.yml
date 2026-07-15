@@ -1,12 +1,9 @@
 name: Postar ofertas
 
 on:
-  push:
-    paths:
-      - "ofertas.json"
   workflow_dispatch:
   schedule:
-    - cron: "0 12,15,18,21 * * *"  # 9h, 12h, 15h, 18h (horário de Brasília)
+    - cron: "0 12,14,16,18,20,22 * * *"  # 9h às 19h (Brasília), a cada 2h
 
 permissions:
   contents: write
@@ -23,7 +20,10 @@ jobs:
 
       - run: pip install requests
 
-      - name: Publicar ofertas pendentes
+      - name: Buscar ofertas novas (Promobit)
+        run: python buscador.py
+
+      - name: Publicar ofertas pendentes no Telegram
         run: python postar.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
