@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-EZHUB Ofertas — buscador automático v2
-Varre o Promobit (categorias de hardware) e alimenta o ofertas.json.
-v2: se o acesso direto for bloqueado, usa o proxy de leitura r.jina.ai.
+EZHUB Ofertas — buscador automático v3
+v3: usa páginas com ofertas embutidas no HTML, extrai links também do JSON
+interno (__NEXT_DATA__) e cai pro proxy r.jina.ai quando a página vem vazia.
 """
 
 import html as htmllib
@@ -24,10 +24,8 @@ HEADERS = {
 }
 
 CATEGORIAS = [
-    "https://www.promobit.com.br/promocoes/hardware-perifericos/s/",
-    "https://www.promobit.com.br/promocoes/hd-ssd/s/",
-    "https://www.promobit.com.br/promocoes/processador/s/",
-    "https://www.promobit.com.br/promocoes/monitor/s/",
+    "https://www.promobit.com.br/promocoes/informatica/",
+    "https://www.promobit.com.br/promocoes/games/",
 ]
 
 PALAVRAS_OK = [
@@ -36,50 +34,71 @@ PALAVRAS_OK = [
     "placa mãe", "placa-mãe", "placa mae", "gabinete", "fonte", "cooler", "water cooler",
     "monitor", "teclado", "mouse", "headset", "mousepad", "nvme", "hd ", "pendrive",
     "cadeira gamer", "notebook", "pc gamer", "microfone", "webcam", "roteador", "kingston",
-    "hyperx", "logitech", "redragon", "corsair", "asus", "gigabyte", "msi", "placa asus",
+    "hyperx", "logitech", "redragon", "corsair", "asus", "gigabyte", "msi", "controle",
+    "gamer", "wi-fi", "wifi", "usb", "hub", "dock",
 ]
 
 ARQ_OFERTAS = "ofertas.json"
 ARQ_VISTAS = "vistas.json"
 
 
-def fetch(url: str) -> str:
-    """Tenta acesso direto; se bloqueado, usa o proxy r.jina.ai pedindo HTML."""
+def fetch_direto(url: str) -> str:
     try:
         r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-        if r.status_code == 200 and len(r.text) > 5000:
-            print(f"    [direto ok] {url}")
+        print(f"    [direto HTTP {r.status_code}, {len(r.text)}b]")
+        if r.status_code == 200:
             return r.text
-        print(f"    [direto falhou: HTTP {r.status_code}, {len(r.text)}b] {url}")
     except Exception as e:
-        print(f"    [direto erro: {type(e).__name__}] {url}")
+        print(f"    [direto erro: {type(e).__name__}]")
+    return ""
 
-    # Fallback: proxy de leitura (contorna bloqueio de datacenter)
+
+def fetch_proxy(url: str) -> str:
     try:
         r = requests.get(
             f"https://r.jina.ai/{url}",
             headers={"X-Return-Format": "html", "User-Agent": HEADERS["User-Agent"]},
-            timeout=60,
+            timeout=90,
         )
-        if r.status_code == 200 and len(r.text) > 3000:
-            print(f"    [proxy ok, {len(r.text)}b]")
+        print(f"    [proxy HTTP {r.status_code}, {len(r.text)}b]")
+        if r.status_code == 200:
             return r.text
-        print(f"    [proxy falhou: HTTP {r.status_code}, {len(r.text)}b]")
     except Exception as e:
         print(f"    [proxy erro: {type(e).__name__}]")
     return ""
 
 
 def achar_ofertas_listagem(html: str) -> list[str]:
-    urls = re.findall(r"https://www\.promobit\.com\.br/oferta/[a-zA-Z0-9\-]+-\d+", html)
-    urls += [f"https://www.promobit.com.br{u}" for u in
-             re.findall(r'href="(/oferta/[a-zA-Z0-9\-]+-\d+)"', html)]
+    """Extrai slugs de oferta de HTML normal, JSON embutido ou markdown."""
+    slugs = []
+    # href normal e URL absoluta
+    slugs += re.findall(r"promobit\.com\.br/oferta/([a-zA-Z0-9\-]+)", html)
+    slugs += re.findall(r'href="/oferta/([a-zA-Z0-9\-]+)"', html)
+    # dentro de JSON com barras escapadas: \/oferta\/slug
+    slugs += re.findall(r"\\/oferta\\/([a-zA-Z0-9\-]+)", html)
+    # campos de slug no JSON interno (slug termina com id numérico longo)
+    slugs += re.findall(r'"(?:slug|offer_slug|offerSlug)"\s*:\s*"([a-zA-Z0-9\-]+-\d{5,})"', html)
+
     vistos, unicos = set(), []
-    for u in urls:
-        if u not in vistos:
-            vistos.add(u)
-            unicos.append(u)
+    for s in slugs:
+        s = s.rstrip("/")
+        if re.search(r"-\d{5,}$", s) and s not in vistos:
+            vistos.add(s)
+            unicos.append(f"https://www.promobit.com.br/oferta/{s}")
     return unicos
+
+
+def listar_categoria(url: str) -> list[str]:
+    html = fetch_direto(url)
+    achadas = achar_ofertas_listagem(html) if html else []
+    if not achadas:
+        # diagnóstico: a página veio, mas sem ofertas?
+        if html:
+            print(f"    (página com {html.lower().count('oferta')} menções a 'oferta', "
+                  f"mas 0 links — tentando proxy)")
+        html = fetch_proxy(url)
+        achadas = achar_ofertas_listagem(html) if html else []
+    return achadas
 
 
 def _buscar_url_loja(obj):
@@ -102,38 +121,35 @@ def _buscar_url_loja(obj):
 
 
 def extrair_oferta(url_oferta: str) -> dict | None:
-    html = fetch(url_oferta)
+    html = fetch_direto(url_oferta)
+    if not html or "Por R$" not in htmllib.unescape(html).replace(" ", " "):
+        html = fetch_proxy(url_oferta) or html
     if not html:
         return None
     texto = htmllib.unescape(html).replace(" ", " ")
 
-    # Título e preço: "Por R$ 439,00: Produto X" (og:title ou <title>)
     m = re.search(r"Por (R\$ ?[\d.]+,\d{2}):\s*([^\"<|]+)", texto)
     if not m:
-        print(f"    (não achei título/preço)")
+        print("    (não achei título/preço)")
         return None
     preco, titulo = m.group(1).strip(), m.group(2).strip()
 
-    # Preço antigo: par "R$X R$Y" colado (riscado + atual)
     preco_antigo = ""
     m = re.search(r"R\$ ?([\d.]+,\d{2})\s*R\$ ?([\d.]+,\d{2})", texto)
     if m and m.group(2) in preco:
         preco_antigo = f"R$ {m.group(1)}"
 
-    # Loja
     loja_nome = ""
     m = re.search(r"Vendido por:?\s*([A-Za-zÀ-ú0-9!&. ]{2,30})", texto)
     if m:
         loja_nome = m.group(1).strip()
 
-    # Cupom: código em caixa alta isolado perto de "cupom"
     cupom = ""
     if "cupom" in texto.lower():
         m = re.search(r"[>\n\s]([A-Z][A-Z0-9]{4,15})[<\n\s].{0,600}?[Ii]r à loja", texto, re.S)
         if m:
             cupom = m.group(1)
 
-    # Link da loja via __NEXT_DATA__ (quando temos HTML bruto)
     link_loja = ""
     m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
     if m:
@@ -155,7 +171,7 @@ def extrair_oferta(url_oferta: str) -> dict | None:
             url_final = f"https://www.amazon.com.br/dp/{asin.group(1)}"
 
     if not url_final:
-        url_final = url_oferta  # sem link direto: manda pra página da oferta
+        url_final = url_oferta
 
     return {
         "titulo": titulo[:120],
@@ -185,13 +201,11 @@ def main():
     candidatas = []
     for cat in CATEGORIAS:
         print(f"Categoria: {cat}")
-        html = fetch(cat)
-        achadas = achar_ofertas_listagem(html) if html else []
+        achadas = listar_categoria(cat)
         print(f"  -> {len(achadas)} ofertas na página")
         candidatas += achadas
         time.sleep(3)
 
-    # dedupe mantendo ordem
     unicas = list(dict.fromkeys(candidatas))
     novas = [u for u in unicas if u not in vistas]
     print(f"\nTotal: {len(unicas)} ofertas, {len(novas)} novas")
