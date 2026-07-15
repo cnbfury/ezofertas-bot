@@ -138,3 +138,31 @@ _15/07 21:41_
 🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
 ✈️ Prefere Telegram? https://t.me/ezofertas
 ```
+
+---
+_15/07 23:05_
+
+```
+🖥️ *Mouse Gamer Attack Botões Preto*
+
+🔥 *R$ 59,99*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/mouse-gamer-com-fio-attack-shark-r1-ultraleve-e-design-ergonomico-12800-dpi-6-botoes-preto-2926546
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_15/07 23:05_
+
+```
+🖥️ *Water Cooler Husky Preto HWT300PT*
+
+🔥 *R$ 175,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/water-cooler-husky-freezy-iluminacao-argb-360mm-amd-e-intel-preto-hwt300pt-2926460
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
