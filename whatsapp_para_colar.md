@@ -306,3 +306,143 @@ _16/07 14:14_
 🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
 ✈️ Prefere Telegram? https://t.me/ezofertas
 ```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *Teclado Gamer Mecânico Branco CH-9194114-NA*
+
+🔥 *R$ 329,99*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/teclado-gamer-mecanico-corsair-k65-rgb-mini-8000hz-led-rgb-60-teclas-cherry-mx-speed-usb-30-branco-ch-9194114-na-2927717
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *Monitor Gamer Agon 0,5ms 24*
+
+🔥 *R$ 509,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/monitor-gamer-aoc-agon-g50-painel-ips-144-hz-05ms-24-pol-2926610
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *Monitor Gamer Pichau 165Hz PG-NXS34NEOS-BL01*
+
+🔥 *R$ 1.246,36*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/monitor-gamer-pichau-nexus-34-neo-s-34-pol-va-ultrawide-curvo-wqhd-1ms-165hz-pg-nxs34neos-bl01-2927636
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *Microfone Gamer Fifine K669-PRO,*
+
+🔥 *R$ 99,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/microfone-gamer-fifine-k669-pro-rgb-2927616
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *LIBRETX Ryzen 5 Grátis Brasil*
+
+🔥 *R$ 1.033,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/libretx-ryzen-5-5500x3d-9600x-processador-cpu-am5-placa-mae-b550m-envio-gratis-do-brasil-2927582
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *Processador Ryzen 5 5500X3D*
+
+🔥 *R$ 1.033,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/processador-amd-ryzen-5-5500x3d-2927570
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *Cadeira gamer Python encosto ajustável*
+
+🔥 *R$ 395,84*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/cadeira-gamer-python-fly-cinza-encosto-ajustavel-2927533
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *Processador Intel Core DDR5 BX80768245KF*
+
+🔥 *R$ 599,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/processador-intel-core-ultra-5-245kf-52ghz-ate-14-nucleos-com-suporte-a-pcie-50-e-40-e-suporte-a-ddr5-bx80768245kf-2927489
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *Redragon MOUSEPAD GAMER P012 pretovermelho*
+
+🔥 *R$ 16,91*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/redragon-mousepad-gamer-capricorn-330x260x3mm-p012-pretovermelho-2927467
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 17:29_
+
+```
+🖥️ *Controle Xbox Series*
+
+🔥 *R$ 329,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/controle-xbox-series-2927711
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
