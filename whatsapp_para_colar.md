@@ -166,3 +166,143 @@ _15/07 23:05_
 🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
 ✈️ Prefere Telegram? https://t.me/ezofertas
 ```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *Impressora Multifuncional Brother Wi-Fi Bivolt*
+
+🔥 *R$ 665,91*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/impressora-multifuncional-brother-dcp-t436w-tanque-de-tinta-colorida-wi-fi-usb-bivolt-2927404
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *Havit Headset Gamer PS4, PS5,*
+
+🔥 *R$ 217,55*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/havit-headset-gamer-fuxi-h7se-sem-fio-24ghz-e-bluetooth-drivers-40mm-microfone-destacavel-43h-de-bateria-preto-compativel-com-pc-ps4-ps5-s-2927402
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *Notebook Lenovo Loq-e Luna Grey*
+
+🔥 *R$ 4.640,15*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/notebook-lenovo-loq-e-15iax9e-intel-core-i5-12450hx-16gb-512gb-ssd-rtx-3050-linux-156-83mes00000-luna-grey-2927358
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *Processador Ryzen 7 5700x*
+
+🔥 *R$ 975,48*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/processador-amd-ryzen-7-5700x-2927315
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *Teclado Mecânico Gamer Branco K500-B61BBR*
+
+🔥 *R$ 139,99*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/teclado-mecanico-gamer-machenike-k500-b61-switch-huano-brown-abnt-branco-k500-b61bbr-2927321
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *NZXT Function 2 Óptico Gamer*
+
+🔥 *R$ 289,90*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/nzxt-function-2-minitkl-teclado-optico-gamer-2927166
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *Monitor Gamer Full FreeSync Premium*
+
+🔥 *R$ 1.125,28*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/monitor-gamer-25-full-hd-25g64-qd-mini-led-300hz-1ms-freesync-premium-tcl-2927268
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *Controle Sony Playstation Preto Branco*
+
+🔥 *R$ 1.046,32*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/controle-sony-playstation-dualsense-edge-ps5-sem-fio-preto-e-branco-2927411
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *Controle DualSense Midnight Black Sony*
+
+🔥 *R$ 354,38*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/controle-sem-fio-dualsense-midnight-black-ps5-sony-2927320
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 14:14_
+
+```
+🖥️ *Controle Xbox Series Cabo*
+
+🔥 *R$ 288,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/controle-sem-fio-xbox-series-cabo-usb-2927191
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
