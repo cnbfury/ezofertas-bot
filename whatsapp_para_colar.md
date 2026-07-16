@@ -446,3 +446,59 @@ _16/07 17:29_
 🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
 ✈️ Prefere Telegram? https://t.me/ezofertas
 ```
+
+---
+_16/07 19:25_
+
+```
+🖥️ *Teclado Legacy Preto Warrior Tc315*
+
+🔥 *R$ 39,90*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/teclado-legacy-com-fio-preto-warrior-tc315-2927904
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 19:25_
+
+```
+🖥️ *Cadeira Gamer Elite Nylon 50*
+
+🔥 *R$ 490,87*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/cadeira-gamer-elite-pro-dazz-reclinavel-130-couro-pu-pistao-classe-4-suporta-140-kg-bracos-1d-almofadas-lombar-e-pescoco-base-nylon-50-2927840
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 19:25_
+
+```
+🖥️ *Notebook Gamer Strix Tela 240*
+
+🔥 *R$ 12.239,15*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/notebook-gamer-rog-strix-g16-g615jpr-nvidia-rtx-5070-intel-core-i9-14900hx-32gb-ram-1tb-ssd-windows-11-home-tela-16-240-2927821
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 19:25_
+
+```
+🖥️ *Controle Sony Dualshock 4 Preto*
+
+🔥 *R$ 234,82*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/controle-sony-dualshock-4-ps4-sem-fio-preto-2927928
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
