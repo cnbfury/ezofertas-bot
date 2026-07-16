@@ -502,3 +502,45 @@ _16/07 19:25_
 🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
 ✈️ Prefere Telegram? https://t.me/ezofertas
 ```
+
+---
+_16/07 21:11_
+
+```
+🖥️ *Notebook ASUS VivoBook Black E1504FA-NJ731*
+
+🔥 *R$ 2.564,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/notebook-asus-vivobook-go-15-amd-ryzen-5-7520u-8gb-256gb-ssd-keepos-tela-156-fhd-mixed-black-e1504fa-nj731-2928019
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 21:11_
+
+```
+🖥️ *Monitor Gamer Samsung UWQHD LC34G55TWWLMZD*
+
+🔥 *R$ 1.709,18*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/monitor-gamer-samsung-odyssey-g5-34-uwqhd-lc34g55twwlmzd-2928026
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 21:11_
+
+```
+🖥️ *Notebook Gamer ASUS 7 3050*
+
+🔥 *R$ 4.094,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/notebook-gamer-asus-tuf-a15-ryzen-7-rtx-3050-2928013
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
