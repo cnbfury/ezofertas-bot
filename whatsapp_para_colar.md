@@ -544,3 +544,143 @@ _16/07 21:11_
 🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
 ✈️ Prefere Telegram? https://t.me/ezofertas
 ```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *Placa B760M WIFI, DDR5, WiFi*
+
+🔥 *R$ 525,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/placa-mae-msi-pro-b760m-a-wifi-lga-1700-ddr5-wifi-2928302
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *Placa Gigabyte B840M Wi-Fi Bluetooth*
+
+🔥 *R$ 599,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/placa-mae-gigabyte-b840m-eagle-wifi6-amd-am5-micro-atx-ddr5-rgb-wi-fi-6-bluetooth-2928291
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *B760M-P LGA1700 DDR5*
+
+🔥 *R$ 471,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/msi-pro-b760m-p-lga1700-ddr5-2928285
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *Gigabyte B840M Eagle WiFi6 DDR5*
+
+🔥 *R$ 599,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/gigabyte-b840m-eagle-wifi6-am5-ddr5-2928283
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *ASRock B650M-HDVM.2 DDR5*
+
+🔥 *R$ 659,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/asrock-b650m-hdvm2-am5-ddr5-2928281
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *Gigabyte B760M Aorus LGA1700 DDR5*
+
+🔥 *R$ 674,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/gigabyte-b760m-aorus-elite-gen5-lga1700-ddr5-2928280
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *ASUS Prime B550M-A WiFi DDR4*
+
+🔥 *R$ 546,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/asus-prime-b550m-a-wifi-ii-am4-ddr4-2928284
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *ASUS B650M-E WiFi DDR5*
+
+🔥 *R$ 914,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/asus-tuf-b650m-e-wifi-am5-ddr5-2928279
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *Placa Gigabyte B650M AM5, DDR5*
+
+🔥 *R$ 624,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/placa-mae-gigabyte-b650m-d3hp-amd-am5-ddr5-2928273
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_16/07 23:06_
+
+```
+🖥️ *Tela Gamer 9.2*
+
+🔥 *R$ 179,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/tela-gamer-92-ips-usb-c-preto-2928260
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
