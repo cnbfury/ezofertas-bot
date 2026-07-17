@@ -684,3 +684,143 @@ _16/07 23:06_
 🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
 ✈️ Prefere Telegram? https://t.me/ezofertas
 ```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Placa ASUS Prime HDMI Preto*
+
+🔥 *R$ 313,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/placa-mae-asus-prime-a520m-r-am4-ddr4-m2-chipset-a520-hdmi-preto-2928970
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Water Cooler Deepcool ARGB 360mm*
+
+🔥 *R$ 322,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/water-cooler-deepcool-le360-v2-preto-anti-leak-argb-360mm-argb-2928964
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Monitor Gamer 21.5'' 22b30hm23 Preto*
+
+🔥 *R$ 339,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/monitor-gamer-aoc-215-full-hd-gaming-120hz-1ms-22b30hm23-cor-preto-2928962
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Mouse Gamer Fire Paw3311 Bk-r3x*
+
+🔥 *R$ 100,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/mouse-gamer-sem-fio-fire-phoenix-24000dpi-paw3311-bk-r3x-cor-2928884
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Monitor Gamer Philips Wide Fullhd*
+
+🔥 *R$ 532,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/monitor-gamer-philips-24-evnia-ips-144hz-05ms-wide-fullhd-2928881
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Notebook Dell 15 Windows 11*
+
+🔥 *R$ 3.461,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/notebook-dell-15-i5-1334u-8gb-ram-512gb-ssd-tela-156-full-hd-ips-windows-11-2928762
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Notebook Lenovo Ideapad IPS, Linux*
+
+🔥 *R$ 3.069,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/notebook-lenovo-ideapad-slim-3-i5-13420h-8gb-ram-512gb-ssd-tela-153-fhd-ips-linux-2928755
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Monitor Gamer Agon 24g50f Preto*
+
+🔥 *R$ 439,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/monitor-gamer-aoc-agon-g50-24-144hz-05ms-24g50f-preto-2928827
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Controle DualSense Sterling Silver*
+
+🔥 *R$ 340,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/controle-dualsense-sterling-silver-2928989
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
+
+---
+_17/07 13:58_
+
+```
+🖥️ *Controle DualSense Branco*
+
+🔥 *R$ 296,00*
+
+🛒 Compre aqui: https://www.promobit.com.br/oferta/controle-dualsense-branco-2928990
+
+🎓 Aprenda a montar seu PC do zero: https://kingstonmaker.com.br
+✈️ Prefere Telegram? https://t.me/ezofertas
+```
