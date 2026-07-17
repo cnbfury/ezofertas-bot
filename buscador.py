@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-EZHUB Ofertas — buscador automático v3
-v3: usa páginas com ofertas embutidas no HTML, extrai links também do JSON
-interno (__NEXT_DATA__) e cai pro proxy r.jina.ai quando a página vem vazia.
+EZHUB Ofertas — buscador automático v4
+v4: extrai o link REAL da loja via promobit.com.br/redirect/to/{id}.
+Amazon -> link afiliado ezhub-20. Outras lojas -> link limpo da loja.
 """
 
 import html as htmllib
@@ -10,6 +10,7 @@ import json
 import os
 import re
 import time
+from urllib.parse import unquote
 
 import requests
 
@@ -35,7 +36,7 @@ PALAVRAS_OK = [
     "monitor", "teclado", "mouse", "headset", "mousepad", "nvme", "hd ", "pendrive",
     "cadeira gamer", "notebook", "pc gamer", "microfone", "webcam", "roteador", "kingston",
     "hyperx", "logitech", "redragon", "corsair", "asus", "gigabyte", "msi", "controle",
-    "gamer", "wi-fi", "wifi", "usb", "hub", "dock",
+    "gamer", "wi-fi", "wifi", "usb", "hub", "dock", "impressora", "dualsense",
 ]
 
 ARQ_OFERTAS = "ofertas.json"
@@ -69,16 +70,11 @@ def fetch_proxy(url: str) -> str:
 
 
 def achar_ofertas_listagem(html: str) -> list[str]:
-    """Extrai slugs de oferta de HTML normal, JSON embutido ou markdown."""
     slugs = []
-    # href normal e URL absoluta
     slugs += re.findall(r"promobit\.com\.br/oferta/([a-zA-Z0-9\-]+)", html)
     slugs += re.findall(r'href="/oferta/([a-zA-Z0-9\-]+)"', html)
-    # dentro de JSON com barras escapadas: \/oferta\/slug
     slugs += re.findall(r"\\/oferta\\/([a-zA-Z0-9\-]+)", html)
-    # campos de slug no JSON interno (slug termina com id numérico longo)
     slugs += re.findall(r'"(?:slug|offer_slug|offerSlug)"\s*:\s*"([a-zA-Z0-9\-]+-\d{5,})"', html)
-
     vistos, unicos = set(), []
     for s in slugs:
         s = s.rstrip("/")
@@ -92,47 +88,59 @@ def listar_categoria(url: str) -> list[str]:
     html = fetch_direto(url)
     achadas = achar_ofertas_listagem(html) if html else []
     if not achadas:
-        # diagnóstico: a página veio, mas sem ofertas?
-        if html:
-            print(f"    (página com {html.lower().count('oferta')} menções a 'oferta', "
-                  f"mas 0 links — tentando proxy)")
         html = fetch_proxy(url)
         achadas = achar_ofertas_listagem(html) if html else []
     return achadas
 
 
-def _buscar_url_loja(obj):
-    if isinstance(obj, dict):
-        for chave in ("offer_link", "offerLink", "link", "url", "store_url", "storeUrl"):
-            v = obj.get(chave)
-            if isinstance(v, str) and v.startswith("http") and "promobit" not in v \
-                    and "promoby" not in v and not v.endswith((".png", ".jpg", ".svg", ".webp")):
-                return v
-        for v in obj.values():
-            r = _buscar_url_loja(v)
-            if r:
-                return r
-    elif isinstance(obj, list):
-        for v in obj:
-            r = _buscar_url_loja(v)
-            if r:
-                return r
-    return None
+def link_real_da_loja(id_oferta: str) -> str:
+    """Página /redirect/to/{id} contém o link de destino da loja."""
+    url = f"https://www.promobit.com.br/redirect/to/{id_oferta}"
+    html = fetch_direto(url) or fetch_proxy(url)
+    if not html:
+        return ""
+    links = re.findall(r'href="(https?://[^"]+)"', html)
+    links += re.findall(r"\((https?://[^)\s]+)\)", html)
+    for l in links:
+        if any(x in l for x in ("promobit.com.br", "supix.", "/images/", ".png", ".svg")):
+            continue
+        # redes de afiliados embutem o destino no parâmetro ued/url/u
+        m = re.search(r"[?&](?:ued|url|u|r|d)=(https?%3A[^&\"]+)", l)
+        if m:
+            return unquote(m.group(1))
+        return l
+    return ""
+
+
+def limpar_link(url_loja: str) -> tuple[str, str]:
+    """Retorna (loja, url_final). Amazon ganha o tag ezhub-20."""
+    asin = re.search(r"/(?:dp|gp/product|gp/aw/d)/([A-Z0-9]{10})", url_loja)
+    if "amazon.com.br" in url_loja and asin:
+        return "amazon", f"https://www.amazon.com.br/dp/{asin.group(1)}?tag={AMAZON_TAG}"
+    if "mercadolivre.com.br" in url_loja or "mercadolibre" in url_loja:
+        return "ml", url_loja.split("#")[0]
+    # outras lojas: tira parâmetros de rastreio
+    base = url_loja.split("?")[0]
+    return "outra", base if len(base) > 25 else url_loja
 
 
 def extrair_oferta(url_oferta: str) -> dict | None:
     html = fetch_direto(url_oferta)
-    if not html or "Por R$" not in htmllib.unescape(html).replace(" ", " "):
+    if not html or "Por R$" not in htmllib.unescape(html).replace(" ", " "):
         html = fetch_proxy(url_oferta) or html
     if not html:
         return None
-    texto = htmllib.unescape(html).replace(" ", " ")
+    texto = htmllib.unescape(html).replace(" ", " ")
 
     m = re.search(r"Por (R\$ ?[\d.]+,\d{2}):\s*([^\"<|]+)", texto)
     if not m:
         print("    (não achei título/preço)")
         return None
     preco, titulo = m.group(1).strip(), m.group(2).strip()
+
+    if "Promoção encerrada" in texto:
+        print("    (promoção encerrada, pulando)")
+        return None
 
     preco_antigo = ""
     m = re.search(r"R\$ ?([\d.]+,\d{2})\s*R\$ ?([\d.]+,\d{2})", texto)
@@ -150,28 +158,13 @@ def extrair_oferta(url_oferta: str) -> dict | None:
         if m:
             cupom = m.group(1)
 
-    link_loja = ""
-    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
-    if m:
-        try:
-            link_loja = _buscar_url_loja(json.loads(m.group(1))) or ""
-        except Exception:
-            pass
-
-    loja, url_final = "outra", ""
-    if link_loja:
-        try:
-            r = requests.get(link_loja, headers=HEADERS, timeout=30, allow_redirects=True)
-            url_final = r.url
-        except Exception:
-            url_final = link_loja
-        asin = re.search(r"/(?:dp|gp/product)/([A-Z0-9]{10})", url_final)
-        if "amazon.com.br" in url_final and asin:
-            loja = "amazon"
-            url_final = f"https://www.amazon.com.br/dp/{asin.group(1)}"
-
-    if not url_final:
-        url_final = url_oferta
+    # link real da loja via redirect
+    id_oferta = re.search(r"-(\d{5,})$", url_oferta).group(1)
+    bruto = link_real_da_loja(id_oferta)
+    if bruto:
+        loja, url_final = limpar_link(bruto)
+    else:
+        loja, url_final = "outra", url_oferta  # fallback: página da oferta
 
     return {
         "titulo": titulo[:120],
